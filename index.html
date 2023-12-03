@@ -1,19 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="jp" style="scroll-padding-top:50px;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap超入門</title>
+    <title>DRINK_LINK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
 </head>
 <body>
+
 <!-- NAV -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="./logo.png" height="30"></a>
+        <a class="navbar-brand" href="#"><img src="./logo01.png" height="200"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,125 +33,225 @@
         </div>
     </div>
 </nav>
-<!-- MAIN -->
-<section class="bg-primary">
-<div class="container">
-    <div class="row align-items-center">
-        <div class="col-lg-6 order-1"><img src="https://doodleipsum.com/700x394/flat?i=41f017cf42bb4f905a48613ec87b613b" class="img-fluid"></div>
-        <div class="col-lg-6 order-2">
-            <p class="badge bg-warning text-white mb-1">HTMLだけでコーディング</p>
-                <h1>Bootstrap超入門</h1>
-                <p class="lead">Webプログラミング初心者がこのページを作れるようになる！</p></div>
-    </div>
-</div>
-</section>
-<!-- FEATURE -->
-<section class="bg-light py-4" id="feature">
-    <div class="container overflow-hidden">
-        <div class="row text-center">
-            <div class="col-md-4 mb-3">
-                <div class="fs-1"><i class="bi bi-film text-primary"></i></div>
-                <h5>物語りがある</h5>
-                <p class="text-secondary">「実用的に使える」または「新しい体験ができる」をテーマに、必要最小限の技術を使ってストーリーを展開し伏線を回収するコンテンツです。</p>
+<!-- HERO -->
+<style>
+    .video-wrapper{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    .video-wrapper video{
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;               
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .video-text {
+        width: 100%;
+        height: 100%;            
+        position: absolute;
+    }
+    </style>   
+    <section id="hero">
+        <div class="video-wrapper">
+            <video src="movie01.mp4" autoplay loop muted playsinline></video>
+            <div class="video-text" style="background-color: rgba(0, 0, 0, 0.5);">
+                <div class="text-white vh-100 text-center align-items-center d-flex">
+                    <div class="container overflow-hidden">
+                        <h1 class="display-1 p-4"  data-aos="fade-in" data-aos-delay="0">準備はOK？</h1>
+                        <h2 class="display-6 p-3"  data-aos="fade-in" data-aos-delay="1000">人生を豊かにするアプローチは、いつだって偶然で必然にやってくる</h2>
+                        <h5 class="display-6"  data-aos="fade-in" data-aos-delay="2000">そんな世界へようこそ</h5>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="fs-1"><i class="bi bi-tools text-primary"></i></div>
-                <h5>新しいものづくり</h5>
-                <p class="text-secondary">「ハードウェアだけでなく、プログラミングやデータサイエンスも１つのツールとして活用する「新しい時代のものづくり」です。</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="fs-1"><i class="bi bi-award text-primary"></i></div>
-                <h5>モノにする</h5>
-                <p class="text-secondary">技術要素をステップバイステップで学びながら、演習で試行錯誤を行い、自ら考え成果物を作り上げるスタイルです。</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- FEATURE -->
-<div class="container">
-    <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-1"><img src="https://doodleipsum.com/700x394/hand-drawn?i=0e05d2d124e0a86b24727ce6006b739a" class="img-fluid"></div>
-        <div class="col-lg-6 order-lg-2 text-center ">
-            <h1 class="text-primary display-1">01</h1>
-            <h2>物語りのあるコンテンツ</h2>
-            <p>網羅的な説明が書かれたコンテンツではなく、映画のようにこころを動かすコンテンツを目指しています。シナリオ作りから検証を重ねて作成しています。</p>
-        </div>
-    </div>
-    <div class="row align-items-center">       
-        <div class="col-lg-6 order-lg-2"><img src="https://doodleipsum.com/700x394/hand-drawn?i=4a51d1ffc4e6797c11a5b4c7cc33cda6" class="img-fluid"></div>
-        <div class="col-lg-6 order-lg-1 text-center ">
-            <h1 class="text-primary display-1">02</h1>
-            <h2>新しい時代のものづくり</h2>
-            <p>数十年の間に「ものづくり製品」から「ウェブサービス」へ時代が一変しましたが、更に時代は変化し続けます。画面の中だけの世界ではなく、リアルな世界に作用するものにこだわっています。</p>
-        </div>
-    </div>
-    <div class="row align-items-center"> 
-        <div class="col-lg-6 order-lg-1"><img src="https://doodleipsum.com/700x394/hand-drawn?i=0293217a2126d91159f5a6717396cbe4" class="img-fluid"></div>
-        <div class="col-lg-6 order-lg-2 text-center ">
-            <h1 class="text-primary display-1">01</h1>
-            <h2>ステップバイステップでモノにする</h2>
-            <p>「ものものテック」では創業以来、毎年多数のリアルなハンズオンを企業・自治体・大学・各種イベント等で実施しています。リアルな教育でのエッセンスや最適化された難易度で皆さんの学びを加速します。</p>
-        </div>
-    </div>
-    <!-- BUTTON -->
-    <section>
-        <div class="bg-primary text-white text-center py-5">
-            <h3>あなたの物語を実現しよう！</h3>
-            <p class="py-3">ほぼCSSやJavaScriptは記述せずに、HTMLのコーディングだけでランディングページを作れます。</p>
-            <button type="button" class="btn btn-outline-light">学習を始める</button>
         </div>
     </section>
-    <!-- PRICE -->
-<section class="bg-light py-5" id="price">
+<!-- HERO -->
+<!-- <style>
+.hero-background {
+    background-image: url(./image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    }
+</style>
+<section id="hero">
+    <div class="hero-background">
+        <div style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="text-white vh-100 text-center align-items-center d-flex">
+                <div class="container overflow-hidden">
+                    <p class=""><h1 class="display-1 p-4">準備はOK？</h1></p>
+                    <h2 class="display-6 p-3">人生を豊かにするアプローチは、いつだって偶然で必然にやってくる</h2>
+                    <h5 class="display-6">そんな世界へようこそ</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="bg-dark p-5">
+    <div class="">
+        <div class="text-white text-center ">
+            <h1 class="py-4">What's DRINL_LINK</h1>
+            <p class="py-3">フレンド登録した友達との飲み会を自動で企画してくれるアプリです。
+                あなたに突然届く招待状が、楽しい時間へお誘いします。</p>
+            <p class="py-3">みんなに会いたいけど企画する時間がない？
+                新しくオープンしたあのお店に行きたいけど、誰と行こうかな
+                そういえば、そろそろ飲みに行きたいな</p>
+            <p class="py-3">今よりもっと気軽に集まれる機会をDrink Linkは生み出します。</p>
+            <p>－あなたの毎日に笑いとつながりを－</p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURE -->
+<!-- <section class="bg-light py-4" id="feature">
+    <div class="container overflow-hidden">
+        <div class="row text-center" data-aos="zoom-in">
+            <div class="col-md-4 mb-3">
+                <div class="fs-1 text-primary"><i class="bi bi-film"></i></div>
+                <h5>物語りがある</h5>
+                <p class="text-muted">「実用的に使える」または「新しい体験ができる」をテーマに、必要最小限の技術を使ってストーリーを展開し伏線を回収するコンテンツです。</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="fs-1 text-primary"><i class="bi bi-tools"></i></div>
+                <h5>新しいものづくり</h5>
+                <p class="text-muted">「ハードウェアだけでなく、プログラミングやデータサイエンスも１つのツールとして活用する「新しい時代のものづくり」です。</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="fs-1 text-primary"><i class="bi bi-award"></i></div>
+                <h5>モノにする</h5>
+                <p class="text-muted">技術要素をステップバイステップで学びながら、演習で試行錯誤を行い、自ら考え成果物を作り上げるスタイルです。</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- SHOWCASES -->
+<section class="bg-white py-5" id="showcases">
+    <div class="container overflow-hidden">
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right">
+                <img class="img-fluid"
+                    src="caystep.jpg" height="400">
+            </div>
+            <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                <span class="display-3 text-primary">01</span>
+                <h3>DRINK_LINKへ登録</h3>
+                <p>3ステップで完了！</p>
+            </div>
+        </div>
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 order-lg-2" data-aos="zoom-in-left">
+                <img class="img-fluid"
+                    src="inv01.jpg">
+            </div>
+            <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                <span class="display-3 text-primary">02</span>
+                <h3>突然届く招待状をタップ</h3>
+                <p>どんなイベントかはスマホに届いた招待状を確認。タップするだけでJOIN完了。日々訪れる偶然は必然となって楽しんで。通知のバイブで心震えるかも？</p>
+            </div>
+        </div>
+        
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right">
+                <img class="img-fluid"
+                    src="img00.svg">
+            </div>
+            <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                <span class="display-3 text-primary">03</span>
+                <h3>Chatで参加メンバーとお店をチェック</h3>
+                <p>自動に作成されたチャットルームには見慣れた顔ぶりが集まって、楽しみは膨らむいっぽう！煩わしいお店選びも予約も、全部DRINK_LINKに任せて今はチャットでみんなとキャッチアップ！
+                </p>
+            </div>
+        </div>
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 order-lg-2" data-aos="zoom-in-right">
+                <img class="img-fluid"
+                    src="img02.jpg">
+            </div>
+            <div class="col-lg-6 order-lg-" data-aos="fade-left">
+                <span class="display-3 text-primary">04</span>
+                <h3>イベント当日！</h3>
+                <p>盛り上がってみんなと写真をたくさん撮るかもしれないし、スマホは充電忘れずに！同じ飲み会は二度とやってこないから、今その時を目一杯楽しんで！！
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-light py-5">
+    <div class="container overflow-hidden">
+        <div class="row text-center">
+            <div class="col">
+                <h3 class="py-5">お問い合わせ</h3>
+                <p class="lead">ご不明点や不安な点は以下のフォームよりご相談ください</p>
+                <p class="lead py-3"><a href="https://docs.google.com/forms/d/e/XXX/viewform" class="btn btn-lg btn-outline-dark" target="_blank">お問い合わせはこちら</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICE -->
+<!-- <section class="bg-light py-5" id="price">
     <div class="container overflow-hidden">
         <div class="row text-center">
             <h3 class="mb-4">プランを比較</h3>
         </div>
         <div class="row row-cols-1 row-cols-md-3">
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-delay="0">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header p-3">
                         <h4 class="my-0 fw-normal">お試しプラン</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-secondary fw-light">
+                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-muted fw-light">
                                 /月</span></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                            <li class="text-secondary text-decoration-line-through">全ての学習コンテンツ閲覧</li>
-                            <li class="text-secondary text-decoration-line-through">講師による講義</li>
-                            <li class="text-secondary text-decoration-line-through">メンターによるサポート</li>
+                            <li class="text-muted text-decoration-line-through">全ての学習コンテンツ閲覧</li>
+                            <li class="text-muted text-decoration-line-through">講師による講義</li>
+                            <li class="text-muted text-decoration-line-through">メンターによるサポート</li>
                         </ul>
                         <button type="button" class="w-100 btn btn-lg btn-outline-primary">すぐに試す</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-delay="100">
                 <div class="card mb-4 shadow-sm border-primary">
-                    <div class="card-header py-3 bg-primary">
-                        <h4 class="my-0 fw-normal text-light">個人プラン</h4>
+                    <div class="card-header py-3 bg-primary text-white border-primary">
+                        <h4 class="my-0 fw-normal">個人プラン</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-secondary fw-light">
+                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-muted fw-light">
                                 /月（今だけ特別！）</span></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
                             <li><i class="bi-check-lg text-success"></i>全ての学習コンテンツ閲覧</li>
-                            <li class="text-secondary text-decoration-line-through">講師による講義</li>
-                            <li class="text-secondary text-decoration-line-through">メンターによるサポート</li>
+                            <li class="text-muted text-decoration-line-through">講師による講義</li>
+                            <li class="text-muted text-decoration-line-through">メンターによるサポート</li>
                         </ul>
                         <button type="button" class="w-100 btn btn-lg btn-primary">登録・ログイン</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-delay="200">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-normal">法人プラン</h4>
                     </div>
                     <div class="card-body">
                         <h1 class="card-title fs-1"><span class="h4">¥</span>50,000〜<span
-                                class="h4 text-secondary fw-light"> /月</span>
+                                class="h4 text-muted fw-light"> /月</span>
                         </h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
@@ -163,6 +265,8 @@
             </div>
         </div>
     </div>
+</section> -->
+
 <!-- FAQ -->
 <section class="bg-white py-5" id="faq">
     <div class="container overflow-hidden">
@@ -180,13 +284,13 @@
                         <h2 class="accordion-header" id="heading1">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                <p>Q. コンテンツは最後まで無料で学習可能なのでしょうか？</p>
+                                <p>Q. 登録は無料ですか？</p>
                             </button>
                         </h2>
                         <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
                             data-bs-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                A. 登録するだけで最後まで無料で学習できます。
+                                A. 登録もイベント発生後もその他全てに関して無料です。
                             </div>
                         </div>
                     </div>
@@ -194,13 +298,13 @@
                         <h2 class="accordion-header" id="heading2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                <p>Q. 登録にはお金がかかりますか？</p>
+                                <p>Q. お店の変更は可能ですか？</p>
                             </button>
                         </h2>
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
                             data-bs-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                A. 登録は無料です。入会金や年会費などもかかりません。
+                                A. サジェストした段階では予約成立していません。チャット内で予約変更可能期限内でしたら、リンク先でお店変更する手続きをお願いいたします。
                             </div>
                         </div>
                     </div>
@@ -208,13 +312,13 @@
                         <h2 class="accordion-header" id="heading3">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                <p>Q. このページは何ですか？</p>
+                                <p>Q. 知らない人とも同席になりますか？</p>
                             </button>
                         </h2>
                         <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
                             data-bs-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                A. 「Bootstrap超入門」コンテンツのサンプルページです。学ぶことでこのページが最終的に作れるようになります。
+                                A. フレンド登録した人しか参加しませんが、共通のフレンド登録している同士が同席する可能性はあります。しかし、共通のフレンドも必ず一緒のイベントになるため、全く関連がない人同士は同席しません。
                             </div>
                         </div>
                     </div>
@@ -228,7 +332,7 @@
 <section class="bg-light p-5" id="team">
     <div class="container overflow-hidden">
         <div class="row text-center">
-            <h3 class="mb-4">講師／メンター</h3>
+            <h3 class="mb-4">ユーザーインタビュー</h3>
         </div>
         <div class="row text-center">
             <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="0">
@@ -236,9 +340,9 @@
                     <img class="rounded-circle mb-3"
                         src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=3c872b28d4577889c194cbc98b672696"
                         width="80">
-                    <p class="text-muted fw-bold">佐藤 太郎</p>
-                    <p class="border-bottom">チーフエンジニア</p>
-                    <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
+                    <p class="text-muted fw-bold">山田　太郎</p>
+                    <p class="border-bottom">30代男性</p>
+                    <p>始めて登録しましたが、実際イベント発生いた時の招待状に笑いました。学生時代の友人に久々会えたのも良かったです！それぞれ家族がいてなかなか家を出ずらいですが、アプリでの招集を言い訳に今後も飲みに行きたいです。</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="100">
@@ -247,8 +351,8 @@
                         src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=8de3b58cab71e0ce7d1e1081418edb62"
                         width="80">
                     <p class="text-muted fw-bold">鈴木 太郎</p>
-                    <p class="border-bottom">エンジニア</p>
-                    <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
+                    <p class="border-bottom">40代男性</p>
+                    <p>会社の同僚に進められて使ってみたところ、同じ会社で顔もわかるが話したことない他の部署の方と同席になりました。新鮮だったし、会社での輪も広がったのでありだと思いました。最近は同じお店で同じメンバーとしか飲んでなかったのでこういう変化があることも大事だと改めて気づきました。</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
@@ -257,8 +361,8 @@
                         src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=58e15545cbaaccdde1e619aa57b6f85f"
                         width="80">
                     <p class="text-muted fw-bold">高橋 花子</p>
-                    <p class="border-bottom">デザイナー</p>
-                    <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
+                    <p class="border-bottom">30代女性</p>
+                    <p>一瞬、出会い系かと思い警戒しましたが、フレンド同士でのイベントと知って安心しました。でも同席した方に聞いたらフレンドのフレンドが参加することもあると聞いて、一瞬どうしようかと思ったのですが、ちゃんと共通のフレンドがいないと成立しないそうなのでそこまで警戒しなくても良いのかなと。結果、初めてのイベントは招待状を見た瞬間笑ってしまったので思わずjoinをタップしてしまった！</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="300">
@@ -266,9 +370,9 @@
                     <img class="rounded-circle mb-3"
                         src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=be176fd7d38de78c85dbfba873eb723a"
                         width="80">
-                    <p class="text-muted fw-bold">田中 太郎</p>
-                    <p class="border-bottom">アシスタント</p>
-                    <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
+                    <p class="text-muted fw-bold">田中 愛花</p>
+                    <p class="border-bottom">20代女性</p>
+                    <p>Xでバズってた招待状が気になってたので友達と一緒に登録しました。初めてのイベントは「クリスマスってなんだっけ？」というタイトルでした！激しく同感だったので思わずSNSに載せたら反応良かったです！</p>
                 </div>
             </div>
         </div>
@@ -279,7 +383,7 @@
 <footer class="py-3 bg-primary">
     <div class="container">
         <div class="row">
-            <div class="col"><a href="https://monomonotech.jp/" class="text-decoration-none text-white">&copy; ものものテック</a></div>
+            <div class="col"><a href="https://monomonotech.jp/" class="text-decoration-none text-white">&copy; DRINK_LINK</a></div>
             <div class="col text-end"><a href="#" class="text-decoration-none text-white"><i class="bi bi-chevron-up"></i> Back to top</a></div>
         </div>
     </div>
