@@ -3,19 +3,27 @@
 <html lang="jp" style="scroll-padding-top:50px;">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="DRINK LINK - 友達との飲み会を自動で企画するアプリ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRINK_LINK</title>
+    <title>DRINK LINK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
+    <meta property="og:type" content="website">
+    <meta property="og:url" src="https://tawashi-yk.github.io/test_bootstrap/">
+    <meta property="og:title" content="DRINK LINK">
+    <meta property="og:description" content="友達との飲み会を自動で企画するアプリ">
+    <meta property="og:image" content="./titlephoto.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="./logo01.png" height="60"></a>
+        <a class="navbar-brand" href="#"><img src="./logo00.png" height="60"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,13 +31,13 @@
         <div class="collapse navbar-collapse fw-bold" id="navbarNav">
             <ul class="navbar-nav ms-auto me-2">
                 <li class="nav-item"><a class="nav-link" aria-current="page" href="#hero">ホーム</a></li>
-                <li class="nav-item"><a class="nav-link" href="#feature">特徴</a></li>
-                <li class="nav-item"><a class="nav-link" href="#showcases">詳細</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cta">特徴</a></li>
+                <li class="nav-item"><a class="nav-link" href="#feature">使い方</a></li>
                 <li class="nav-item"><a class="nav-link" href="#price">プラン</a></li>
                 <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">ユーザーインタビュー</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">ユーザー様の感想</a></li>
             </ul>
-            <a class="btn btn-dark btn-sm text-white" href="#">無料で始める</a>
+            <a class="btn btn-dark btn-sm text-white" href="#">登録はこちら</a>
         </div>
     </div>
 </nav>
@@ -56,98 +64,114 @@
     }
     
     .video-text {
+        /* 透明度を調整 */
+        background-color: rgba(0, 0, 0, 0.7);
         width: 100%;
         height: 100%;            
         position: absolute;
     }
+
+
+  
     </style>   
     <section id="hero">
         <div class="video-wrapper">
-            <video src="movie02.mp4" autoplay loop muted playsinline></video>
+            <video src="movie04.MP4" autoplay loop muted playsinline></video>
             <div class="video-text" style="background-color: rgba(0, 0, 0, 0.5);">
                 <div class="text-white vh-100 text-center align-items-center d-flex">
                     <div class="container overflow-hidden">
-                        <h1 class="display-1 p-4"  data-aos="fade-in" data-aos-delay="0">準備はOK？</h1>
-                        <h2 class="display-6 p-3"  data-aos="fade-in" data-aos-delay="1000">人生を豊かにするアプローチは、いつだって偶然で必然にやってくる</h2>
-                        <h5 class="display-6"  data-aos="fade-in" data-aos-delay="2000">そんな世界へようこそ</h5>
+                        <h1 class="p-4"  data-aos="fade-in" data-aos-delay="0">準備はOK？</h1>
+                        <h2 class="p-3"  data-aos="fade-in" data-aos-delay="1000">人生を豊かにするアプローチは、いつだって偶然で必然にやってくる</h2>
+                        <h2 class="p-3"  data-aos="fade-in" data-aos-delay="2000">そんな世界へようこそ</h5>
+                        <h1 class="p-3 text-warning"  data-aos="fade-in" data-aos-delay="3000">DRINK LINK</h1>
+                        <a href="" class="btn btn-warning" data-aos-delay="3000">はじめる</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- HERO -->
-<!-- <style>
-.hero-background {
-    background-image: url(./image.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    }
-</style>
-<section id="hero">
-    <div class="hero-background">
-        <div style="background-color: rgba(0, 0, 0, 0.5);">
-            <div class="text-white vh-100 text-center align-items-center d-flex">
-                <div class="container overflow-hidden">
-                    <p class=""><h1 class="display-1 p-4">準備はOK？</h1></p>
-                    <h2 class="display-6 p-3">人生を豊かにするアプローチは、いつだって偶然で必然にやってくる</h2>
-                    <h5 class="display-6">そんな世界へようこそ</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<section class="bg-dark p-5">
+
+<section class="bg-light p-5" id="showcases">
     <div class="">
-        <div class="text-white text-center ">
-            <h1 class="py-4">What's DRINK_LINK</h1>
-            <p class="py-3">フレンド登録した友達との飲み会を自動で企画してくれるアプリです。
+        <div class="text-dark text-center">
+            <h1 class="py-4">What's DRINK LINK</h1>
+                <div class="text-center">
+                <div class="ratio ratio-16x9">
+                    <iframe style=""
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/-y_EXf9bLSc?si=LCu4tWp0AHDtATjA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    ></iframe>
+                </div>
+                </div>
+                <div class="my-3">
+                    <p class="pt-5 fs-4">みんなに会いたいけど、スケジュール合わせやお店選びがちょっと面倒くさい?<br>
+                そういえば、そろそろ飲みに行きたいのに、スマホに伸びた手はそのまま帰りの時刻表を調べてない？<br><br>
+                誘われたら行くんだけどな・・</p> 
+                    <p class="py-3 fs-4">私たちが提供するのは、生まれるはずだった大切な時間。いわば自分一人では起こせないインタラクティブな会話や気付きが詰まった大好きな人たちと一緒に過ごす時間。</p>
+                    <p class="py-3 fs-4">DRINK LINKはフレンド登録した友達との飲み会を自動で企画してくれるアプリです。
                 あなたに突然届く招待状が、楽しい時間へお誘いします。</p>
-            <p class="py-3">みんなに会いたいけど企画する時間がない？
-                新しくオープンしたあのお店に行きたいけど、誰と行こうかな
-                そういえば、そろそろ飲みに行きたいな</p>
-            <p class="py-3">今よりもっと気軽に集まれる機会をDrink Linkは生み出します。</p>
-            <p>－あなたの毎日に笑いとつながりを－</p>
+                    <p class="py-3 fs-4">今よりもっと気軽に集まれる機会をDrink Linkは生み出します。</p>
+                    <p class="pb-3 fs-4">－身体的・精神的なふれあいで、あなたの毎日にたくさんの笑いとつながりを－</p>
+                </div>
         </div>
     </div>
 </section>
 
 <!-- FEATURE -->
-<!-- <section class="bg-light py-4" id="feature">
-    <div class="container overflow-hidden">
-        <div class="row text-center" data-aos="zoom-in">
-            <div class="col-md-4 mb-3">
-                <div class="fs-1 text-primary"><i class="bi bi-film"></i></div>
-                <h5>物語りがある</h5>
-                <p class="text-muted">「実用的に使える」または「新しい体験ができる」をテーマに、必要最小限の技術を使ってストーリーを展開し伏線を回収するコンテンツです。</p>
+
+<!-- SHOWCASES -->
+<section class="bg-warning" id="cta">
+    <div class="text-center py-5"><h1>全てをアプリにお任せ</h1></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 align-items-center order-lg-1" data-aos="fade-right">
+                <img src="whatsdrinklink.png" class="img-fluid">
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="fs-1 text-primary"><i class="bi bi-tools"></i></div>
-                <h5>新しいものづくり</h5>
-                <p class="text-muted">「ハードウェアだけでなく、プログラミングやデータサイエンスも１つのツールとして活用する「新しい時代のものづくり」です。</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="fs-1 text-primary"><i class="bi bi-award"></i></div>
-                <h5>モノにする</h5>
-                <p class="text-muted">技術要素をステップバイステップで学びながら、演習で試行錯誤を行い、自ら考え成果物を作り上げるスタイルです。</p>
+            <div class="col-xl-7 col-lg-6 py-5 px-lg-5 order-lg-2">
+                <div class="" data-aos="zoom-in" data-aos-delay="100">
+                    <div><i class="bx bx-beer bx-tada bx-border-circle bx-md"></i>
+                    <h4>飲み会企画</h4></div>
+                    <p class="">必要なのは、そろそろみんなに会いたいと思う気持ちだけ！</p>
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="200">
+                    <div><i class="bx bx-store-alt bx-tada bx-border-circle bx-md"></i></div>
+                    <h4>お店選びも不要</h4>
+                    <p class="">人数や好みもAIに丸投げ、実は毎回お店を探すの大変だったりする<br>誰かがやってくれると助かるって思ってました？</p>
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="300">
+                    <div><i class="bx bx-calendar bx-tada bx-border-circle bx-md"></i></div>
+                    <h4>みんなのスケジュール合わせ</h4>
+                    <p class="">時間と手間をかけるのはもう過去のことに、カレンダーアプリと同期すれば、みんなの都合が良い日にイベント発生します</p>
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="400">
+                    <div><i class="bx bxs-dog bx-tada bx-border-circle bx-md"></i></div>
+                    <h4>AIワンコ</h4>
+                    <p class="">AIワンコと会話するだけで、よりあなた好みのイベント発生確率UP</p>
+                </div>
             </div>
         </div>
     </div>
-</section> -->
+    
+</section>
 
-<!-- SHOWCASES -->
-<section class="bg-white py-5" id="showcases">
+
+<section class="bg-white py-5" id="feature">
     <div class="text-center py-5"><h1>How to use</h1></div>
     <div class="container overflow-hidden">
         <div class="row mb-5 align-items-center">
             <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right">
                 <img class="img-fluid"
-                    src="caystep.jpg" height="400">
+                    src="caystep.png" height="400">
             </div>
             <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                 <span class="display-3 text-primary">01</span>
-                <h3>DRINK_LINKへ登録</h3>
-                <p>3ステップで完了！</p>
+                <h3>DRINK LINKへフレンド登録</h3>
+                <p>2ステップで完了！</p>
             </div>
         </div>
         <div class="row mb-5 align-items-center">
@@ -169,8 +193,8 @@
             </div>
             <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                 <span class="display-3 text-primary">03</span>
-                <h3>Chatで参加メンバーとお店をチェック</h3>
-                <p>自動に作成されたチャットルームには見慣れた顔ぶりが集まって、楽しみは膨らむいっぽう！煩わしいお店選びも予約も、全部DRINK_LINKに任せて今はチャットでみんなとキャッチアップ！
+                <h3>Chatでイベント参加メンバーとお店をチェック</h3>
+                <p>チャットルームには見慣れた顔ぶりが集まって、楽しみは膨らむいっぽう！煩わしいお店選びも予約も、全部DRINK LINKに任せて今はチャットでみんなとキャッチアップ！
                 </p>
             </div>
         </div>
@@ -203,73 +227,56 @@
 </section>
 
 <!-- PRICE -->
-<!-- <section class="bg-light py-5" id="price">
+
+<!-- PRICE -->
+<section class="bg-white py-5" id="price">
     <div class="container overflow-hidden">
         <div class="row text-center">
             <h3 class="mb-4">プランを比較</h3>
         </div>
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col" data-aos="zoom-in" data-aos-delay="0">
-                <div class="card mb-4 shadow-sm">
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 col-lg-6">
+                <div class="card mb-4 shadow-sm h-100">
                     <div class="card-header p-3">
-                        <h4 class="my-0 fw-normal">お試しプラン</h4>
+                        <h4 class="my-0 fw-normal">Standardプラン</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-muted fw-light">
+                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-secondary fw-light">
                                 /月</span></h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                            <li class="text-muted text-decoration-line-through">全ての学習コンテンツ閲覧</li>
-                            <li class="text-muted text-decoration-line-through">講師による講義</li>
-                            <li class="text-muted text-decoration-line-through">メンターによるサポート</li>
+                            <li><i class="bi-check-lg text-success"></i>招待状3通/月</li>
+                            <li><i class="bi-check-lg text-success"></i>Link範囲：フレンド登録内</li>
+                            
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">すぐに試す</button>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-dark">すぐに試す</button>
                     </div>
                 </div>
             </div>
-            <div class="col" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card mb-4 shadow-sm border-primary">
-                    <div class="card-header py-3 bg-primary text-white border-primary">
-                        <h4 class="my-0 fw-normal">個人プラン</h4>
+            <div class="col-md-6 col-lg-6">
+                <div class="card mb-4 shadow-sm border-dark h-100">
+                    <div class="card-header py-3 border-dark">
+                        <h4 class="my-0 fw-normal">もっと飲みに行きたい！<br>More Linkプラン</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title fs-1"><span class="h4">¥</span>0<span class="h4 text-muted fw-light">
-                                /月（今だけ特別！）</span></h1>
+                        <h1 class="card-title fs-1"><span class="h4">¥</span>1,000<span class="h4 text-secondary fw-light">
+                                /月</span></h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                            <li><i class="bi-check-lg text-success"></i>全ての学習コンテンツ閲覧</li>
-                            <li class="text-muted text-decoration-line-through">講師による講義</li>
-                            <li class="text-muted text-decoration-line-through">メンターによるサポート</li>
+                            <li><i class="bi-check-lg text-success"></i>招待状 無制限/月</li>
+                            <li><i class="bi-check-lg text-success"></i>Link範囲：Link＋α<br>　友人の友人までの範囲で少しずつ人の輪が広がります！
+                                </li>
+                            
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-primary">登録・ログイン</button>
+                        <button type="button" class="w-100 btn btn-lg btn-warning">登録・ログイン</button>
                     </div>
                 </div>
             </div>
-            <div class="col" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">法人プラン</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title fs-1"><span class="h4">¥</span>50,000〜<span
-                                class="h4 text-muted fw-light"> /月</span>
-                        </h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                            <li><i class="bi-check-lg text-success"></i>全ての学習コンテンツ閲覧</li>
-                            <li><i class="bi-check-lg text-success"></i>講師による講義</li>
-                            <li><i class="bi-check-lg text-success"></i>メンターによるサポート</li>
-                        </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">ご相談ください</button>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- FAQ -->
-<section class="bg-white py-5" id="faq">
+<section class="bg-light py-5" id="faq">
     <div class="container overflow-hidden">
         <div class="row text-center">
             <h3 class="mb-4">よくある質問</h3>
@@ -330,7 +337,7 @@
 </section>
 
 <!-- TEAM -->
-<section class="bg-light p-5" id="team">
+<section class="bg-white p-5" id="team">
     <div class="container overflow-hidden">
         <div class="row text-center">
             <h3 class="mb-4">ユーザーインタビュー</h3>
@@ -343,7 +350,7 @@
                         width="80">
                     <p class="text-muted fw-bold">山田　太郎</p>
                     <p class="border-bottom">30代男性</p>
-                    <p>始めて登録しましたが、実際イベント発生いた時の招待状に笑いました。学生時代の友人に久々会えたのも良かったです！それぞれ家族がいてなかなか家を出ずらいですが、アプリでの招集を言い訳に今後も飲みに行きたいです。</p>
+                    <p>始めて登録しましたが、実際イベント発生した時の招待状に笑いました。学生時代の友人に久々会えたのも良かったです！それぞれ家族がいてなかなか家を出ずらいですが、アプリでの招集を言い訳に今後も飲みに行きたいです。</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="100">
