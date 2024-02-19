@@ -16,7 +16,9 @@
     <meta property="og:description" content="友達との飲み会を自動で企画するアプリ">
     <meta property="og:image" content="./titlephoto.jpg">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -71,7 +73,19 @@
         position: absolute;
     }
 
+    /* <uniquifier>: Use a uniquifier for the class name
+       <weight>: Use a value from 100 to 900 */
 
+    .noto-sans jp-<uniquifier> {
+      font-family: "Noto Sans JP", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+
+    body {
+    font-family: 'Noto Sans JP', sans-serif;
+    }
   
     </style>   
     <section id="hero">
@@ -109,12 +123,12 @@
                 </div>
                 </div>
                 <div class="my-3">
-                    <h4 class="py-3">DRINK LINKはフレンド登録した友達との飲み会を自動で企画してくれるアプリです<br>
-                                    あなたに突然届く招待状が、楽しい時間へお誘いします</h4>
-                    <h4 class="py-3">今よりもっと気軽に集まれる機会をDRINK LINKは生み出します<br>
-                                    自分一人では起こせない、大好きな人たちと一緒に過ごす時間を思い切り楽しんで</h4>
+                    <h5 class="py-3">DRINK LINKはフレンド登録した友達との飲み会を自動で企画してくれるアプリです。<br><br>
+                                    あなたに突然届く招待状が、楽しい時間へお誘いします。</h5>
+                    <h5 class="py-3">面倒なお店選びもスケジュール確認も必要なし。<br><br>
+                                    自分一人では起こせない、大好きな人たちと一緒に過ごす時間を思い切り楽しんで。</h5>
                             
-                    <h4 class="py-3">－あなたの毎日にたくさんの笑いとつながりを－</h4>
+                    <h5 class="py-3">－あなたの毎日にたくさんの笑いとつながりを－</h5>
                 </div>
         </div>
     </div>
